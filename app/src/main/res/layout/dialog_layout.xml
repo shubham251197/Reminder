@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<EditText
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:id="@+id/newreminder"
+    android:hint="Reminder content"
+    android:layout_margin="5dp"
+    />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/newdate"
+        android:hint="Date"
+        android:layout_margin="5dp"
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/newtime"
+        android:hint="Time"
+        android:layout_margin="5dp"
+        />
+    <!--<EditText-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/newindex"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:hint="Index"-->
+        <!--/>-->
+</LinearLayout>

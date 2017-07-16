@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shubham.reminders.display_reminder"
+    tools:showIn="@layout/activity_display_reminder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentPadding="10dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/display_desccription"
+                android:textAlignment="center"
+                android:layout_margin="30dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:hint="Enter Details"
+                android:layout_marginTop="40dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@mipmap/date"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/display_date"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_margin="10dp"
+                        android:layout_weight="3"
+                        android:textSize="15dp"
+                        android:hint="Enter Date"
+                        android:layout_marginTop="40dp"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@mipmap/time"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/display_time"
+                        android:layout_margin="10dp"
+                        android:hint="Enter Time"
+                        android:layout_marginTop="40dp"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/dismiss"
+                android:text="DISMISS"
+                android:textColor="@color/beige"
+                android:background="@color/colorPrimaryDark"
+                />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#834215</color>
+    <color name="colorPrimaryDark">#734215</color>
+    <color name="colorAccent">#734215</color>
+    <color name="darkgreen">#006400</color>
+    <color name="lightgreen">#90EE90</color>
+    <color name="lightgray">#D3D3D3</color>
+
+    <color name="beige">#F8EFAC</color>
+    <color name="darkbrown">#734215</color>
+    <color name="mustard">#FDD771</color>
+</resources>
